@@ -1,0 +1,21 @@
+#include<stdio.h>
+int A(){
+	char *v[]={"HERE","THERE","WHERE"};
+	char **p=v;
+	printf("%c",*++p[1]);
+	printf("%c ",*++p[1]);
+}
+int B(){
+	char *c[]={"in","at","on"};
+	char **ptr=&c[2];
+	printf("%c",*++*ptr);
+
+}
+int main(){
+	A();
+	B();
+	return 0;
+}
+What is the output of this program?
+$a)HE n  $b)HE t  $c)TH n  $d)None of the above   $1
+

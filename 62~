@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+	int i=404;
+	char *ptr = (char *)&i;
+    *ptr = 69;
+	*++ptr=0;
+	printf("%s",(char *)&i);
+	return 0;
+}
+
+
+$ a)194 $ b)E0 $ c)E $ d)F0  $2
+

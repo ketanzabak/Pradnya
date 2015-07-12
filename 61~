@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    float a = 1234.5678;
+    char b[32];
+    sprintf(b, "%f",a);
+    printf("%s ",b );
+    char c[32] = "1234.5678";
+    if (strcmp(c,b) == 0){
+        printf("Same ");
+    }
+    else{
+        printf("DIFFER ");
+    }
+    return 0;
+}
+
+
+$ a) 1234.567749 Same $ b)1234.567749 Differ $ c)1234.567749 $ d)1234.5678 Differ  $4
+

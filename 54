@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+	int var = 4;
+	var = ~-var + -~var;
+	printf("%d",var);
+	return 0;
+}
+
+$ a)7 $ b)8 $ c)16 $ d)	4  $2
+

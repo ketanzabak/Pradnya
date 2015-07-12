@@ -1,0 +1,14 @@
+what does fun2() do in general ?
+int fun(int x, int y)
+{
+    if (y == 0)   return 0;
+    return (x + fun(x, y-1));
+}
+ 
+int fun2(int a, int b)
+{
+    if (b == 0) return 1;
+    return fun(a, fun2(a, b-1));
+}
+
+$ a)x*y $ b)x+x*y $ c)x^y $ d)y^x $3 

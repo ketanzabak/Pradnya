@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	int a, b, result;
+	printf("Enter the numbers to be multiplied : ");
+	scanf("%d%d", &a, &b);
+	result = 0;
+	while(b != 0)
+	{
+		if(b & 01)
+			result += a;
+		a<<=1;
+		b>>=1;
+	}
+	printf("Result:%d",result);
+	return 0;	
+}
+
+For a = 8 and b = 6 what will be the output ?
+
+$a)68 $b)86 $c)48 $d)84 $3

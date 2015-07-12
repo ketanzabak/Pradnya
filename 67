@@ -1,0 +1,10 @@
+main()
+{
+int i=0;
+while(+(+i--)!=0)
+i-=i++;
+printf("%d",i);
+}
+
+$a)Complier error $b)-1 $c)0 $d)None of above  $2
+

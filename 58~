@@ -1,0 +1,14 @@
+#include <iostream>
+int main()
+{
+	int x,*y,z,a;
+	x=10;
+	z=2;	
+	y=&x;	
+	a=x/*y-x+z*/+z;
+	cout<<a;
+	return 0;
+}
+
+$ a) some hex value $ b) 12 $ c) syntax error $ d) 34  $2
+

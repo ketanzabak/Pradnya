@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+  register p , q , z ;
+  scanf("%d %d",&p , &q);
+  z = p + ~q ;
+  z -= (p + q);
+  printf("%d",z);
+  return 0;
+}
+
+$ a) 	Output will depend on user input $ b)	0 $ c)	Runtime error $ d) Compilation error  $4
+

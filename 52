@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+	printf("%c",*"abcde");
+	return 0;
+}
+
+$ a)b  $  b)a  $ c)NULL  $ d)Compilation Error  $2
+

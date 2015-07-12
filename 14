@@ -1,0 +1,34 @@
+Consider the following C function in which size is the number of elements in the array E:
+
+The value returned by the function MyX is the
+
+int MyX(int *E, unsigned int size)
+{
+    int Y = 0;
+    int Z;
+    int i, j, k;
+    for(i = 0; i < size; i++)
+        Y = Y + E[i];
+    for(i = 0; i < size; i++)
+        for(j = i; j < size; j++)
+        {
+            Z = 0;
+            for(k = i; k <= j; k++)
+                Z = Z + E[k];
+            if (Z > Y)
+                Y = Z;
+        }
+    return Y;
+}
+
+$a) maximum possible sum of elements in 
+	any sub-array of array E.
+$b) maximum element in any sub-array 
+	of array E.
+$c) sum of the maximum elements in all 
+	possible sub-arrays of array E
+$d) the sum of all the elements 
+	in the array E.
+
+$1 
+

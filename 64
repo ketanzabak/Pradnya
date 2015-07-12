@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+void fun(void *a);
+int i;
+
+int main()
+{
+    void *p;
+    p = &i;
+    fun(p);
+    return 0;
+}
+void fun(void *a)
+{
+    int **b;
+    b = (int**)&a;
+    printf("%d\n", **b);
+}
+
+$ a)Compiler Error $ b)Cannot convert void** to int**  $ c)Garbage  $ d)0  $4
+

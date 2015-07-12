@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+  float x, y;
+  float * ptrX;
+  float res;
+  ptrX = &x;
+  x=42; 
+  y=*ptrX;
+  y=x/y;
+  res=x/*ptrX /* There is a surprise here ... */+x;
+  printf("res=%.2f\n",res);
+}
+$ a) 42.00 $ b) 43.00 $ c) 84.00 $ d) none of the above  $3
+

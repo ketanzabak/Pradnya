@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+	int a=0x0A;
+	int *b;
+	b =malloc(sizeof(char));
+	b = &a;
+	a ^= *b;
+	printf("%d",a);
+	return 0;
+}
+
+$ a)0  $ b)Run time error $ c)100 $ d)lvalue required  $1
+

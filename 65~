@@ -1,0 +1,14 @@
+#define assert(cond) if(!(cond)) \
+  (fprintf(stderr, "assertion failed: %s, file %s, line %d \n",#cond,\
+__FILE__,__LINE__), abort())
+ 
+void main(){
+int i = 10;
+if(i==0) 
+    assert(i < 100);
+else
+    printf("This statement becomes else for if in assert macro");
+}
+
+$a)assertion failed $b)0 $c)Compiler error $d)None of above  $2
+

@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	char s[]={'a','b','c','\n','c','\0'};
+	char *p,*str1,*str;
+	p=&s[3];
+	str=p;
+	str1=s;
+	
+	printf("%d",++*p+++*str1-32);
+	return 0;
+}
+
+$a) 75 $b) c $c) 76 $d) b $3
+
+

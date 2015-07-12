@@ -1,0 +1,10 @@
+Consider the following function
+
+double f(double x){
+  if( abs(x*x – 3) < 0.01) return x;
+  else return f(x/2 + 1.5/x);
+}
+Give a value q (to 2 decimals) such that f(q) will return q:_____.
+
+$ a) 4.22 $ b) 2.24 $ c) 1.72 $ d) 3.42 $3
+

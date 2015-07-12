@@ -1,0 +1,43 @@
+#include<stdio.h>
+int main()
+{
+inc(); 
+} 
+
+int inc()
+{
+printf("Hello");
+return 0; 
+}
+
+//pradnya.c
+#include<stdio.h>
+int main()
+{
+inc();
+} 
+
+int inc()
+{
+printf("Hello");
+return 0; 
+}
+
+# gcc pradnya.c
+# ./a.out
+
+and
+
+# g++ pradnya.cpp
+# ./a.out
+
+$ a) Error Error
+
+$ b) Error Hello
+
+$ c) Hello Error
+
+$ d) Hello Hello
+
+$3
+

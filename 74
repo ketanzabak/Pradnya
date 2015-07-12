@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(){
+	unsigned int n;
+	n=(64>>(2+1-2))&(~(1<<2));
+	printf("%x",n);
+	return 0;
+}
+
+$a)64  $b)0  $c)128  $d)20  $4

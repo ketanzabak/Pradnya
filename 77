@@ -1,0 +1,38 @@
+#include<stdio.h>
+#define PR(fmt,val) printf("%"#fmt" ",(val))
+#define PRINT1(f,x1) PR(f,x1)
+int i=1;
+int main(){
+auto int i,j;
+i=rset();
+for(j=1;j<3;j++){
+PRINT1(d,nxt(i));
+PRINT1(d,lst(i));
+PRINT1(d,nw(i+j));
+printf("\n");
+}
+return 0;
+}
+int rset(void){
+return(i);
+}
+int nxt(int j){
+return(j=i++);
+}
+int lst(int j){
+static int i=5;
+return(j=i);
+}
+int nw(int i){
+auto int j=10;
+return(i=j+=i);
+}
+
+What is the output of this program?
+$a) 1 5 12 2 4 14 
+$b) 1 5 12 2 5 13 
+$c) 1 5 10 2 6 11 
+$d) none of the above
+
+$2
+

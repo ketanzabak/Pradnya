@@ -1,0 +1,51 @@
+
+Reciept No.: final
+Username: skfm
+Name: ksmf
+College: kvd
+Contact: kdmf
+Email ID: ksdfm
+Score: -87
+------------------------------------------------------
+Reciept No.: k
+Username: k
+Name: k
+College: k
+Contact: k
+Email ID: k
+Reciept No.: k
+Username: k
+Name: k
+College: k
+Contact: k
+Email ID: k
+Reciept No.: k
+Username: k
+Name: k
+College: k
+Contact: k
+Email ID: k
+Score: -146
+------------------------------------------------------
+Reciept No.: k
+Username: k
+Name: k
+College: k
+Contact: k
+Email ID: k
+Reciept No.: k
+Username: k
+Name: k
+College: k
+Contact: k
+Email ID: k
+Score: -108
+------------------------------------------------------
+Reciept No.: 1
+Username: 1
+Name: 1
+College: 1
+Contact: 1
+Email ID: 1
+Score: 16
+------------------------------------------------------

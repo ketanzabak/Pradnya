@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+	void *vp;
+	char ch = 'p', *cp = 'pradnya';
+	int j = 20;
+	vp = &ch;
+	printf("%c",*(char *)vp);
+	vp = &j;
+	printf("%d",*(int *)vp);
+	vp = cp;
+	printf("%s",(char *)vp+3);
+	
+	return 0;
+}
+
+$a) pr20adnya $b) pra20ya $c)p20radnya $d)Segmentation Fault Error $4

@@ -1,0 +1,12 @@
+The most appropriate matching for the following pairs->
+
+X: m=malloc(5); m=NULL;	 1: Using dangling pointer
+Y: free(n); n->value=5;	 2: Using uninitialized pointers
+Z: char *p; *p = 'a';	 3: Lost Memory
+
+$a) X-1 Y-3 Z-2
+$b) X-2 Y-1 Z-3
+$c) X-3 Y-1 Z-2
+$d) None of the above
+
+$4

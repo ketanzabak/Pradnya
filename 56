@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+	int x,i=2;
+	x=~-!++i;
+	x = -~x ;
+	printf("%d",x);
+	return 0;
+}
+
+$ a)2 $ b)1 $ c)0 $ d)-1 $3
+

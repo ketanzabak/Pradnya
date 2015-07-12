@@ -1,0 +1,11 @@
+#include <stdio.h>
+int i=0;
+int main()
+{
+	extern int i;
+	if(i==0)
+		printf("Hello\n");
+	return 0;
+}
+$ a) Hello $b) Garbage $c) Compile Error $d) Run time Error $1
+

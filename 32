@@ -1,0 +1,10 @@
+#define PRODUCT(x) (x*x)
+void main(){
+    int i=7,j,k;
+    j=PRODUCT(i++);
+    k=PRODUCT(++i);
+    printf("%d%d",j,k);
+}
+$ a)56 121 $ b)49 121 $ c)56 90 $ d)56 110   $1
+
+

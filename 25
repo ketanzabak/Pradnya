@@ -1,0 +1,15 @@
+what is the output of following code:
+#include<stdio.h>
+void main()
+{
+float i=1.5;
+switch(i)
+{
+case 1.5 :printf("1.5");
+case 2.5: printf("2.5");
+default:printf("0");
+}
+}
+
+$a)1.5 $b)0 $c)compiler Error $d)none of the above  $3
+

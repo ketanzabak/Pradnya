@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+	int i = 300;
+	char *ptr = &i;
+	*++ptr=2;
+	printf("%d",i);
+	return 0;
+}
+
+$ a)302  $ b)556  $ c)558  $ d)Error  $2
+

@@ -1,0 +1,25 @@
+#include<iostream>
+
+template<typename Func1, typename Func2>
+class callable {
+  Func1 *m_f1;
+  Func2 *m_f2;
+
+public:
+  callable(Func1 *f1, Func2 *f2):m_f1(f1), m_f2(f2) { }
+  operator Func1*() { return m_f1; }
+  operator Func2*() { return m_f2; }
+};
+
+void inc(int i) { std::cout << "inc: " << i << std::endl; }
+void pradnya(long il) { std::cout << "pradnya: " << il << std::endl; }
+
+int main() {
+  callable<void(int), void(long)> c(inc, pradnya);
+  c(12); 
+  c(42L); 
+}
+
+$ a)12L 42 $ b) 42L 12 $ c)12 42L $ d) 12 42  $4
+
+

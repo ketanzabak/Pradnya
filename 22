@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main( )
+{
+	int a[2][2][2] = { {10,2,3,4}, {5,6,7,8} };
+	int *p,*q;
+	p=&a[2][2][2];
+	*q=***a;
+	printf("%d..%d",*p,*q);
+	return 0;
+}
+What is the output of this program?
+
+$a)Garbage value..1 
+$b)1..Garbage value 
+$c)Garbage value..Garbage value 
+$d)Segmentation fault Error 
+$4
+
+
+

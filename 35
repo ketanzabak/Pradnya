@@ -1,0 +1,35 @@
+Consider the psudo code given below. The function DoSomething() takes 
+as argument a pointer to the root of an aribtrary tree represented by
+the leftMostChild-rightSibling representation. Each node of the tree
+is of type treeNode. 
+
+typedef struct treeNode* treeptr;
+
+struct treeNode{
+	treeptr leftMostChild, rightSibling;
+};
+
+int DoSomething(treeptr tree)
+{
+	int value = 0;
+	if(tree != NULL)
+	{
+	if(tree->leftMostChild == NULL)
+		value = 1;
+	else
+		value = DoSomething(tree->leftMostChild);
+		
+	value = value + DoSomething(tree->rightSibling);
+	}
+	return (value);
+}
+
+When the pointer to the root of the tree is passed as the argument to 
+DoSomething(), the value return by the function corresponds to the
+
+$a) Number of Internal nodes in the tree.
+$b) Height of the tree.
+$c) Number of nodes without rightSibling 
+	in the tree.
+$d) Number of leaf nodes in the tree.
+$4

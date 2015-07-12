@@ -1,0 +1,16 @@
+#include<stdio.h>
+using namespace std;
+int main()
+{
+int inc[2] = {10,20};
+const int *pradnya;
+pradnya = &inc[0];
+*pradnya = 30;
+printf("%d",*pradnya);
+printf(“%d”, *(++pradnya));
+return(0);
+}
+
+$ a) 30 20 $ b) 30 31 $ c) Compile-time error $ d) run-time error $3
+
+

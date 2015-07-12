@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+label1:
+#define loop while(c!=10){c++;}
+break;
+int main(){
+	int c = 0;
+	if(c==0){
+		goto label1;
+	}
+	printf("%d",c);
+	return 0;
+}
+
+$ a)10  $ b)Compile time error $ c)Garbage value $ d)None of the above  $2
+

@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+	int I, you = 20 ;
+	I=- - - -you--;
+	printf("%d %d",I,you);
+	return 0;
+}
+
+$ a)20 21 $ b)19 20 $ c)20 19 $ d)Compilation Error  $3
+

@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+	void fun();
+	int x=100,y=200;
+	fun(&x,&y);
+	printf("%d %d",x,y);
+	return 0;
+}
+void fun(int *a, int *b){
+	*a^=*b,*b^=*a,*a^=*b;
+}
+
+$ a)200 100	$b)100 200	$c)100 100 $d)Syntax Error  $1
+

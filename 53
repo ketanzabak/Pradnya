@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+	int a=1,x;
+	x =	sq(++a)+sq(a++)+sq(a++);
+	printf("%d",x);
+	return 0;
+}
+int sq(int num)
+{
+	return num*num;
+}
+
+$ a)17 $ b)18  $ c)16 $ d)20  $1
+

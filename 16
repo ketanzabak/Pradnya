@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Mystruct {
+
+	char c;
+	double b;
+	int i;
+	//float f;
+};
+
+int main(){
+
+	struct Mystruct m;
+	int n=sizeof(m);
+	printf("Size of struct is: %d\n",n);
+	return 0;
+}
+
+$a) 13  $ b) 20 $ c) 9 $ d) 24  $4
+

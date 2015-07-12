@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+unsigned int k = 987 , i = 0;
+char trans[10];
+
+do {
+trans[i++] = (k%16 > 9 ? k%16 - 10 + 'a' : k%16 +'A' );
+printf("%d %d ",k,k%16);
+
+} while(k != 16);
+
+printf("%s ", trans);
+return 0;
+}
+
+$ a)987 11 61 13 3 3
+ 
+$ b)987 5 62 14  3 3
+
+$ c)Compile time error
+
+$ d)Run time Error
+
+$4
+

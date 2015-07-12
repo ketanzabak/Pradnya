@@ -1,0 +1,23 @@
+What will be output if you will execute following c code?
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+
+	int j;
+
+	for(j = 0 ; j<6 ; j++)
+	{
+     		int j = 6;
+		printf("%d\t",j);
+		j++;
+	}
+
+	return EXIT_SUCCESS;
+}	
+
+$ a) 0 1 2 3 4 5 $ b) 6 7 8 9 10 11 $ c) 6 6 6 6 6 6 $ d) Compilation Error  $3
+

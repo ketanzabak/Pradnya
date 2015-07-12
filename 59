@@ -1,0 +1,18 @@
+  What will be output if you will compile and execute the following c code?
+
+void main(){
+   int i;
+   double a=5.2;
+   char *ptr;
+   ptr=(char *)&a;
+   for(i=0;i<=7;i++)
+   printf("%d ",*ptr++);
+}
+
+$ a) -51 -52 -52 -52 -52 -52 20 64
+$ b) 51 52 52 52 52 52 20 64
+$ c) Eight garbage values.
+$ d) Compiler error
+
+$1
+

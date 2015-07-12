@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   	register p , q , z ;
+        scanf("%d %d",&p , &q);
+        z = p + ~q ;
+	z -= (p + q);
+        printf("%d",z);
+        return 0;
+}
+			
+   $ a) -5 $ b) 5 $ c) 0 $  d) compiler error $4

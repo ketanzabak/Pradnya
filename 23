@@ -1,0 +1,12 @@
+nQuestion:#include<stdio.h>
+#define A(a,b,c) (a>b?a>c?a:c:b>c?b:c)
+int main(){
+	int a;
+	a=A(12+18,10+18,12+10);
+	printf("%d",a);
+	return 0;
+}
+
+$a)30		$b)28	 $c)22 		$d)12+10  	$1
+
+

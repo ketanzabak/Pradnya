@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+   int a=3,b=5;
+   printf(&a["Ya!Hello! how is this? %s "],&b["junk/super"]);
+   printf(&a["WHAT%c%c%c %c%c %c !"],1["this"],2["beauty"],0["tool"],0["is"],3["sensitive"],4["CCCCCC"]);
+   return 0;
+}
+What is the output of this program?
+
+$a) Hello! how is this? That is C !
+$b) Hello! how is this? super That is C ! 
+$c) Hello! how is this? super WHAT this 
+$d) Compile time error 
+
+$2

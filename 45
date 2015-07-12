@@ -1,0 +1,16 @@
+#include <iostream>
+
+struct Empty {};
+struct Bit {unsigned long bit:1; };
+int main()
+{
+	Empty e;
+	Bit b;
+
+	std::cout <<"\n" << (sizeof e)*(sizeof b)<<"\n";
+
+        return 0;
+
+}        
+$ a) 4 $ b) 8 $ c) 16 $ d) Segmentation fault  $2
+

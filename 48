@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main()
+{
+	register int a,b;
+	int c;
+	scanf("%d%d",&a,&b);
+	c=~a + ~b + ++a + b++;
+	printf(" %d",c);
+	return 0;
+}
+/* User Input : 1 , 2 */
+
+
+$ a)	-1 $ b)	0 $ c)	1 $ d) Compilation Error  $4
+

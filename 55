@@ -1,0 +1,16 @@
+What will be the output of program hello.c
+/*world.c*/
+
+("Hello World");
+
+/*hello.c	*/
+#include <stdio.h>
+int main()
+{
+	printf
+	#include "world.c"
+	printf(" Good bye");
+}
+
+$ a)Hello World  $ b)Good bye $ c)Hello World Good bye $ d)Compilation Error  $3
+

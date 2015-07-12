@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+int inc[2] = {10,20};
+const int *pradnya;
+pradnya = &inc[0];
+
+cout<<sizeof(pradnya);
+
+return(0);
+}
+$ a) 2 $ b) 4 $ c) 8 $ d)error $3
+

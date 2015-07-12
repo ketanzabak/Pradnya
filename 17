@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define swap(x,y,temp) temp=x; x=y;y=temp;
+int main(void ){
+	int x=6,y=4,temp=0;
+	
+	if(x==0)
+		swap(x,y,temp);
+	
+	printf("%d %d %d",x,y,temp);
+	return 0;
+}
+
+Answer :
+$a ) 6 6 6 $b ) 6 4 0  $c ) 4 0 0 $d ) compiler error  $3
+

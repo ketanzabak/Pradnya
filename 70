@@ -1,0 +1,29 @@
+Choose the correct option to fill ?1 and ?2 so the the program below 
+prints an input string in reverse order. Assume that the imput string 
+is terminated by new line character.
+
+void reverse(void)
+{
+	int c;
+	if (?1)	reverse();
+	?2
+}
+
+int main()
+{
+	printf("Enter text\n");
+	reverse();
+	printf("\n");
+	return 0;
+}
+
+$a) ?1 is (getchar() != '\n') 
+	?2 is getchar(c);
+$b) ?1 is ((c = getchar() ) != '\n') 
+	?2 is getchar(c);
+$c) ?1 is (c != '\n') 
+	?2 is putchar(c);
+$d) ?1 is ((c = getchar() ) != '\n') 
+	?2 is putchar(c);
+
+$4

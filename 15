@@ -1,0 +1,12 @@
+consider the following question. What is the complexity of following function.
+
+int unknown (int n) {
+	int i, j, k 0;
+	for (i=n / 2; i<=n ;i++)
+		for (j= 2; j <=n; j= j* 2)
+			k =k+ n / 2;
+	return k ;
+}
+
+$a) O(n^2)  $ b) O(n^2 * log(n))  $ c) O(n^3)  $ d) O(n^3*log(n))  $2
+

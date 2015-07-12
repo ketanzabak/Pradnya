@@ -1,0 +1,10 @@
+#include <stdio.h>
+main(){
+	int a = 10000;
+	char b='P';
+	int i,j;
+	printf("%d,%d",printf("%d ",a++),printf("%c ",b++)); 
+	return 0;
+}
+$a)10001 Q 6,2  $b)10001 Q 5,1  $ c)P 10000  5,1 $ d)P 10000 6,2 $4 
+

@@ -1,0 +1,29 @@
+include<stdio.h>
+ 
+void myStartupFun (void) __attribute__ ((constructor));
+ 
+void myCleanupFun (void) __attribute__ ((destructor));
+ 
+void myStartupFun (void)
+{
+    printf ("startup code before main()\n");
+}
+
+void myCleanupFun (void)
+{
+    printf ("cleanup code after main()\n");
+}
+ 
+int main (void)
+{
+    printf ("hello\n");
+    return 0;
+}
+
+$a)hello 
+$b)startup code before main()
+$c)compiler error
+$d)startup code before main()  
+	hello  cleanup code after main()  
+$4
+

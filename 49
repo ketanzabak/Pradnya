@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+	int arr[3]={10,20,30};
+	int x=0;
+	x=++arr[++x]+ ++x+arr[--x];
+	printf("%d ",x);
+	return 0;
+}
+$ a) 41 $ b) 42 $ c)44 $ d) Compilation Error  $3
+

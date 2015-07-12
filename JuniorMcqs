@@ -1,0 +1,513 @@
+Question 1:
+#include <iostream>
+
+using namespace std;
+
+int i=0;
+
+class S
+{
+public:
+    S()
+    {
+        i++;
+        cout<<i<<endl;
+    }
+};
+
+int main()
+{
+    S A[100];
+    return 0;
+}
+options :
+A)1 2....100
+B) 0 0 ...100 times 0
+C) 0
+D)no output
+Answer :A
+================================================
+Question 2:
+#include<stdio.h>
+int main(){
+    char a=250;
+    int expr;
+    expr= a+ !a + ~a + ++a;
+    printf("%d",expr);
+    return 0;
+}
+a:249 
+b:250 
+c:0 
+d:-6 
+e:-5 
+
+Answer:d
+===================================================
+Question 3:
+# include <stdio.h> 
+# define print(x)  printf ("%d", x) 
+int x; 
+void Q(int z){ 
+  z += x;
+  print(z); 
+} 
+void P(int *y){ 
+  int x = *y+2; 
+  Q(x); 
+  *y = x-1; 
+  print(x);
+}
+main(void) { 
+  x=5; 
+  P(&x); 
+  print(x); 
+  getchar();
+}
+The output of this program is
+a:1276 
+b:22 12 11 
+c:14 6 6 
+d:766 
+e:none of these
+Answer:a
+========================================================
+Question 4:
+char p[20];
+char *s= "Pradnya";
+int length=strlen(s);
+int i;
+for(i=0;i<length;i++)p[i]=s[length-i];
+printf("%s\n",p);
+
+The output of the program is 
+a:gnirts 
+b:gnirt 
+c:string 
+d:no output is printed 
+e:Error
+
+Answer:d
+===========================================================
+
+Question 5 :In the C language
+a:At most one activation record exists between the current activation record and the activation record for the main 
+b:The number of activation records between the current activation record and the activation record for the main depends on the actual function calling sequence
+c:The visibility of global variables depends on the actual function calling sequence
+d:Recursion requires the activation record for the recursive function to be saved on a different stack before the recursive function can be called
+e:none of these.
+
+Answer:b
+============================================================
+Question 6:
+#include<stdio.h>
+int main(){
+	union var{
+	int a,b;
+	};
+union var v;
+v.a=10;
+v.b=20;
+printf("%d",v.a );
+return 0;
+}
+
+a:10 
+b:0 
+c:30	
+d:Error 
+e:None of these 
+
+Answer:c
+==============================================================
+Question 7:testing remaining...
+int f(int x, int *py, int **ppz){ 
+  int y, z; 
+  **ppz += 1;  
+   z  = **ppz; 
+  *py += 2; 
+   y = *py;
+   x += 3;
+   return x + y + z;
+}
+void main(){
+   int c, *b, **a;
+   c = 4; 
+   b = &c;
+   a = &b;  
+   printf( "%d", f(c,b,a));
+   getchar();
+}
+a:5 
+b:6 
+c:9 
+d:Error 
+e:none of the above
+
+Answer:c
+====================================================================
+Question 8:
+The number of tokens in the following C statement.
+
+printf("i = %d, &i = %x", i, &i);
+is 
+(a) 3
+(b) 26
+(c) 10
+(d) 21
+
+Answer (c)
+====================================================================
+Question 9:
+#include<stdio.h>
+int main(){
+    char a=250;
+    int expr;
+    expr= a+ !a + ~a + ++a;
+    printf("%d",expr);
+    return 0;
+}
+a:249 
+b:250 
+c:0 
+d:-6 
+e:-5 
+Answer:d
+=======================================================================
+
+Question 10:
+In the C language
+1:At most one activation record exists between the current activation record and the activation record for the main 
+2:The number of activation records between the current activation record and the activation record for the main depends on the actual function calling sequence
+3:The visibility of global variables depends on the actual function calling sequence
+4:Recursion requires the activation record for the recursive function to be saved on a different stack before the recursive function can be called
+5:none of these.
+
+optionns :
+a : 2
+b: 1 2
+c: 3 4 
+d: 5
+Answer:a
+=====================================================================
+Question 11:
+#include<stdio.h>
+int main(){
+	union var{
+	int a,b;
+	};
+union var v;
+v.a=10;
+v.b=20;
+printf("%d",v.a );
+return 0;
+}
+
+a:10 
+b:0 
+c:30	
+d:Error 
+e:None of these 
+
+Answer:c
+=====================================================================
+Question:12
+include<stdio.h>
+ 
+void myStartupFun (void) __attribute__ ((constructor));
+ 
+void myCleanupFun (void) __attribute__ ((destructor));
+ 
+void myStartupFun (void)
+{
+    printf ("startup code before main()\n");
+}
+
+void myCleanupFun (void)
+{
+    printf ("cleanup code after main()\n");
+}
+ 
+int main (void)
+{
+    printf ("hello\n");
+    return 0;
+}
+a:hello 
+b:startup code before main()
+c:compiler error
+d:startup code before main()
+hello
+cleanup code after main()
+
+Answer :d
+=======================================================
+Question:13
+			#include <stdio.h>
+			#include <stdlib.h>
+
+			int main()
+			{
+        		register p , q , z ;
+        		scanf("%d %d",&p , &q);
+        		z = p + ~q ;
+			z -= (p + q);
+        		printf("%d",z);
+        		return 0;
+			}
+			//input : 5 2
+			options :
+			a: -5
+			b: 5
+			c: 0
+			d: compiler error
+Answer : d
+=========================================================
+Question:14
+For a C program accessing X[i][j][k], the following intermediate code 
+is generated by a compiler. Assume that the size of an integer is 32 bits 
+and the size of a character is 8 bits.
+
+  t0 = i ∗ 1024
+  t1 = j ∗ 32
+  t2 = k ∗ 4
+  t3 = t1 + t0
+  t4 = t3 + t2
+  t5 = X[t4] 
+  
+Which one of the following statements about the source code for the C program is CORRECT?
+(A) X is declared as “int X[32][32][8]”.
+(B) X is declared as “int X[4][1024][32]”.
+(C) X is declared as “char X[4][32][8]”.
+(D) X is declared as “char X[32][16][2]”.
+
+//Answer: A
+====================================================================
+Question:15
+Consider the following function
+
+double f(double x){
+  if( abs(x*x – 3) < 0.01) return x;
+  else return f(x/2 + 1.5/x);
+}
+Give a value q (to 2 decimals) such that f(q) will return q:_____.
+
+(A) 4.22
+(B) 2.24
+(C) 1.72
+(D) 3.42
+
+
+//Answer : C
+=======================================================================
+Question:16
+Consider the following C function in which size is the number of elements in the array E:
+
+The value returned by the function MyX is the
+
+int MyX(int *E, unsigned int size)
+{
+    int Y = 0;
+    int Z;
+    int i, j, k;
+    for(i = 0; i < size; i++)
+        Y = Y + E[i];
+    for(i = 0; i < size; i++)
+        for(j = i; j < size; j++)
+        {
+            Z = 0;
+            for(k = i; k <= j; k++)
+                Z = Z + E[k];
+            if (Z > Y)
+                Y = Z;
+        }
+    return Y;
+}
+
+(A) maximum possible sum of elements in any sub-array of array E.
+(B) maximum element in any sub-array of array E.
+(C) sum of the maximum elements in all possible sub-arrays of array E
+(D) the sum of all the elements in the array E.
+
+Answer: (A) 
+===============================================================================
+Question : 17
+consider the following question. What is the complexity of following function.
+
+int unknown (int n) {
+	int i, j, k 0;
+	for (i=n / 2; i<=n ;i++)
+		for (j= 2; j <=n; j= j* 2)
+			k =k+ n / 2;
+	return k ;
+}
+
+A) O(n^2)
+B) O(n^2 * log(n))
+C) O(n^3)
+D) O(n^3*log(n))
+
+ANS:-(B)
+=================================================================================
+Question: 18
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Mystruct {
+
+	char c;
+	double b;
+	int i;
+	//float f;
+};
+
+int main(){
+
+	struct Mystruct m;
+	int n=sizeof(m);
+	printf("Size of struct is: %d\n",n);
+	return 0;
+}
+
+A) 13
+B) 20
+c) 9
+D) 24
+Answer : D
+==================================================================================
+Question : 19
+#include <stdio.h>
+#include <stdlib.h>
+#define swap(x,y,temp) temp=x; x=y;y=temp;
+int main(void ){
+	int x=6,y=4,temp=0;
+	
+	if(x==0)
+		swap(x,y,temp);
+	
+	printf("%d %d %d",x,y,temp);
+	return 0;
+}
+
+Answer :
+a ) 6 6 6
+b ) 6 4 0 
+c ) 4 0 0
+d ) compiler error
+Answer : c
+===================================================================================
+Question :20
+#include <stdlib.h>
+#include <stdio.h>
+enum {true, false};
+int main()
+{
+   int i = 1;
+   do
+   {
+      printf("%d ", i);
+      i++;
+      if (i < 15)
+        continue;
+   } while (true);
+ 
+   return 0;
+}
+
+a) Infinite loop
+b) 1 2 3 4 ... 15
+c) 1
+d) compiler error
+
+Answer : c
+====================================================================================
+Question : 21
+ What is the return value of f (p,p ) if the value of p is initialized to 5 before the call? Note
+that the first parameter is passed by reference, whereas the second parameter is passed by
+value. 
+
+int f (int & x, int c) {
+c= c- 1;
+if (c== 0) return 1;
+x= x+ 1;
+return f (x,c) * x;
+}
+
+(A) 3024 (B) 6561 (C) 55440 (D) 161051 
+Answer:- (B)
+======================================================================================
+
+Question : 22
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	char s[]={'a','b','c','\n','c','\0'};
+	char *p,*str1,*str;
+	p=&s[3];
+	str=p;
+	str1=s;
+	
+	printf("%d",++*p+++*str1-32);
+	return 0;
+}
+
+A: 75
+B: c
+C: 76
+D: b
+Answer : c
+====================================================================================
+Question :23
+The most appropriate matching for the following pairs
+X: m=malloc(5); m= NULL;        1: using dangling pointers
+Y: free(n); n->value=5;         	2: using uninitialized pointers
+Z: char *p; *p = ’a’;           	3: lost memory 
+
+a:X—1 Y—3 Z-2 
+b:X—2 Y—1 Z-3 
+c:X—3 Y—2 Z-1 
+d:X—3 Y—1 Z-2 
+e:none of these
+
+Answer:d
+=============================================================================
+Question :24
+#include<stdio.h>
+int main( )
+{
+	int a[2][2][2] = { {10,2,3,4}, {5,6,7,8} };
+	int *p,*q;
+	p=&a[2][2][2];
+	*q=***a;
+	printf("%d..%d",*p,*q);
+	return 0;
+}
+What is the output of this program?
+
+a:Garbage value..1 
+b:1..Garbage value 
+c:Garbage value..Garbage value 
+d:Segmentation fault Error 
+e:none of these
+
+Answer:d
+==============================================================================
+Question :25
+nQuestion:#include<stdio.h>
+#define A(a,b,c) (a>b?a>c?a:c:b>c?b:c)
+int main(){
+	int a;
+	a=A(12+18,10+18,12+10);
+	printf("%d",a);
+	return 0;
+}
+a.30		
+b:28	 
+c:22 		
+d:12+10  	
+e:Error
+Answer:a
+=============================================================================
+Question 26
+

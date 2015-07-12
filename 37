@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+	int inc[2] = {10,20};
+	const int *pradnya;
+	pradnya = &inc[0];
+	*pradnya = 30;
+	printf("%d",*pradnya);
+	printf("%d",*(++pradnya));
+	
+	return 0;
+}
+
+$a) 30 20
+$b) 30 31
+$c) Compile time Error
+$d) Run time Error
+
+$3

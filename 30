@@ -1,0 +1,27 @@
+ #include<stdio.h>
+int main(){
+	funA();
+	funB();
+	return 0;
+}
+funA(){
+	int n[10],*ptr;
+	for(ptr=n;ptr<&n[10];ptr++){
+		*ptr=ptr-n;
+		printf("%d",*ptr);
+	}		
+}
+funB(){
+	char *cptr;
+	int *iptr;
+	cptr=(char*)0x98;
+	iptr=(int*)cptr;
+	iptr++;
+	cptr++;
+	printf(" %d%d",cptr,iptr);
+}
+What is the output of this program?
+$a) 0123456789 108108  $b) 0123456789 fffc  $c) 0123456789 153156  $d) Compile time error   $3
+
+
+
